@@ -12,7 +12,7 @@ export default function App() {
           <Form.Label>Moblie Number</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Enter Customer Moblie Number"
+            placeholder="Enter Customer Mobile Number"
             className="text-center"
           />
         </Form.Group>

@@ -7,7 +7,7 @@ const Dash = () => {
       <div className="">
         <Card style={{ width: "22rem" }} className="text-center m-5">
           <Card.Body>
-            <Card.Title >Total Amount</Card.Title>
+            <Card.Title>Total Amount</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">30989</Card.Subtitle>
             {/* <Card.Text>
             GeeksforGeeks provides a platform for all the students to study
@@ -31,9 +31,7 @@ const Dash = () => {
       <div>
         <Card style={{ width: "22rem" }} className="text-center m-5">
           <Card.Body>
-            <Card.Title >
-              Current Month Total Amount
-            </Card.Title>
+            <Card.Title>Total Customer Visited</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">2321</Card.Subtitle>
             {/* <Card.Text>
             GeeksforGeeks provides a platform for all the students to study
@@ -44,9 +42,7 @@ const Dash = () => {
         </Card>
         <Card style={{ width: "22rem" }} className="text-center m-5">
           <Card.Body>
-            <Card.Title >
-              Current Month Total Plates
-            </Card.Title>
+            <Card.Title>Total Dishes Available</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">2321</Card.Subtitle>
             {/* <Card.Text>
             GeeksforGeeks provides a platform for all the students to study

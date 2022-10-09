@@ -20,13 +20,13 @@ export default function App() {
           <Button className="btn btn-success">Get Details</Button>
         </div>
         <Form.Group className="my-3">
-            <Form.Label>Amount</Form.Label>
-            <Form.Control
-              type="number"
-              placeholder="Enter Amount Payed"
-              className="text-center"
-            />
-          </Form.Group>
+          <Form.Label>Amount</Form.Label>
+          <Form.Control
+            type="number"
+            placeholder="Enter Amount Paid"
+            className="text-center"
+          />
+        </Form.Group>
         <div className="d-grid">
           <Button className="btn btn-success">Add Amount</Button>
         </div>
