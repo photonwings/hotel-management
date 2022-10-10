@@ -66,8 +66,11 @@ const Auth = () => {
   }
 
   return (
-    <div className="Auth-form-container">
-      <form className="Auth-form">
+    <div
+      className="Auth-form-container"
+      style={{ background: "linear-gradient(45deg, black, white)" }}
+    >
+      <form className="Auth-form" style={{ backgroundColor: "lightgray" }}>
         <div className="Auth-form-content">
           <h3 className="Auth-form-title">Sign In</h3>
           <div className="form-group mt-3">
