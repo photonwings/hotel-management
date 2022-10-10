@@ -78,7 +78,7 @@ label {
 }
 
 .display-container {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .home {
@@ -98,4 +98,7 @@ label {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.min-height {
+  min-height: 93.5vh;
 }

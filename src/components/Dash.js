@@ -61,10 +61,13 @@ const Dash = () => {
     fetchDishes()
   }, [])
   return (
-    <div className="display-container d-flex justify-content-around align-items-center">
+    <div
+      className="display-container d-flex justify-content-around align-items-center min-height"
+      style={{ background: "linear-gradient(45deg, black, white)" }}
+    >
       <div className="">
         <Card
-          style={{ width: "22rem", backgroundColor: "lightgray" }}
+          style={{ width: "22rem", backgroundColor: "white" }}
           className="text-center m-5"
         >
           <Card.Body>
@@ -75,7 +78,7 @@ const Dash = () => {
           </Card.Body>
         </Card>
         <Card
-          style={{ width: "22rem", backgroundColor: "lightgray" }}
+          style={{ width: "22rem", backgroundColor: "white" }}
           className="text-center m-5"
         >
           <Card.Body>
@@ -88,7 +91,7 @@ const Dash = () => {
       </div>
       <div>
         <Card
-          style={{ width: "22rem", backgroundColor: "lightgray" }}
+          style={{ width: "22rem", backgroundColor: "white" }}
           className="text-center m-5"
         >
           <Card.Body>
@@ -99,7 +102,7 @@ const Dash = () => {
           </Card.Body>
         </Card>
         <Card
-          style={{ width: "22rem", backgroundColor: "lightgray" }}
+          style={{ width: "22rem", backgroundColor: "white" }}
           className="text-center m-5"
         >
           <Card.Body>

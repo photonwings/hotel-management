@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import supabase from "../config/supabaseClient"
 import { useNavigate } from "react-router-dom"
 
-const Auth = (props) => {
+const Auth = () => {
   const navigate = useNavigate()
   const [userName, setUserName] = useState(null)
   const [password, setPassword] = useState(null)
@@ -17,18 +17,24 @@ const Auth = (props) => {
         console.log(error)
       }
       if (data) {
-        console.log(data)
+        data.forEach((d) => {
+          const { userName, password } = d
+          console.log(userName, password)
+        })
+
         setAuthData(data)
       }
     }
     fetchUsers()
   }, [])
 
-  useEffect(() => {
-    if (success) {
-      navigate("/dash")
-    }
-  }, [success])
+  // useEffect(() => {
+  //   if (success) {
+  //     navigate("/dash")
+  //   } else {
+  //     alert("Username and passowrd does not match")
+  //   }
+  // }, [])
   // const changePage = () => {
   //   if (success) {
   //     alert("success")
@@ -48,6 +54,10 @@ const Auth = (props) => {
           authData[i].password === password
         ) {
           setSuccess(true)
+          navigate("/dash")
+          break
+        } else {
+          alert("Username and passowrd does not match")
           break
         }
       }
