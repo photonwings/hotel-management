@@ -16,13 +16,16 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/auth" element={<Auth />} />
-        <Route path="/dash" element={<Dash />} />
-        <Route path="/billing" element={<Billing />} />
-        <Route path="/employee" element={<Employee />} />
-        <Route path="/history" element={<History />} />
-
+        <Route element={<WithoutNav />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/auth" element={<Auth />} />
+        </Route>
+        <Route element={<WithNav />}>
+          <Route path="/dash" element={<Dash />} />
+          <Route path="/billing" element={<Billing />} />
+          <Route path="/employee" element={<Employee />} />
+          <Route path="/history" element={<History />} />
+        </Route>
         {/* <Route path="/" element={} /> */}
       </Routes>
     </BrowserRouter>
