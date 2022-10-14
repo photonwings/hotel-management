@@ -6,7 +6,6 @@ import supabase from "./config/supabaseClient"
 
 import Auth from "./components/Auth"
 import Home from "./components/Home"
-import NavBar from "./components/NavBar"
 import Dash from "./components/Dash"
 import Billing from "./components/Billing"
 import Employee from "./components/Employee"

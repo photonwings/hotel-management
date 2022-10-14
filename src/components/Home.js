@@ -1,16 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import Auth from "./Auth"
-// import { Route } from "react-router-dom"
 
 const Home = () => {
-  // let navigate = useNavigate()
-  // let location = useLocation()
-  // console.log(location)
-  // const routeChange = () => {
-  //   let path = `\\auth`
-  //   navigate(path)
-  // }
   return (
     <div className="body-container home-img">
       <div className="home home-img">

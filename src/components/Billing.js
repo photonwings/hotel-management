@@ -15,7 +15,6 @@ const Billing = ({ dishPrice }) => {
   const [cName, setCName] = useState("")
   const [cType, setCType] = useState("")
   const [lastBill, setLastBill] = useState(null)
-  const [totalAmount, setTotalAmount] = useState(0)
   const [showCustomer, setShowCustomer] = useState(false)
 
   useEffect(() => {
@@ -27,6 +26,9 @@ const Billing = ({ dishPrice }) => {
           list.push(data[i].cNumber)
         }
         setCustomerList(list)
+      }
+      if (error) {
+        console.log(error)
       }
     }
     const fetchDishDetails = async () => {}
@@ -55,7 +57,6 @@ const Billing = ({ dishPrice }) => {
     items.forEach(({ dId, quantity }) => {
       sum += dishPrice[dId - 1].dPrice * quantity
     })
-    setTotalAmount(sum)
     const { data, error } = await supabase
       .from("bill")
       .insert({ cNumber: Number(number), totalAmount: sum })

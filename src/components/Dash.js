@@ -71,9 +71,9 @@ const Dash = () => {
           className="text-center m-5"
         >
           <Card.Body>
-            <Card.Title>Total Amount</Card.Title>
+            <Card.Title>Total Transaction Done</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">
-              {totalAmount}
+              {totalAmount} Rs
             </Card.Subtitle>
           </Card.Body>
         </Card>
@@ -82,7 +82,7 @@ const Dash = () => {
           className="text-center m-5"
         >
           <Card.Body>
-            <Card.Title>Total Plates</Card.Title>
+            <Card.Title>Total Number of Plates Sold</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">
               {totalPlate}
             </Card.Subtitle>

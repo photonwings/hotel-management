@@ -1,14 +1,11 @@
 import { useEffect, useState } from "react"
 import supabase from "../config/supabaseClient"
 import { Table } from "react-bootstrap"
-import Form from "react-bootstrap/Form"
-import InputGroup from "react-bootstrap/InputGroup"
 
 function History() {
   const [bill, setBill] = useState([])
   useEffect(() => {
     const fetchHistory = async () => {
-      let total = 0
       const { data, error } = await supabase.from("bill").select()
       if (data) {
         console.log(data)

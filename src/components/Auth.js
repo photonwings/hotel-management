@@ -8,7 +8,6 @@ const Auth = () => {
   const [userName, setUserName] = useState(null)
   const [password, setPassword] = useState(null)
   const [authData, setAuthData] = useState(null)
-  const [success, setSuccess] = useState(false)
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -27,22 +26,6 @@ const Auth = () => {
     }
     fetchUsers()
   }, [])
-
-  // useEffect(() => {
-  //   if (success) {
-  //     navigate("/dash")
-  //   } else {
-  //     alert("Username and passowrd does not match")
-  //   }
-  // }, [])
-  // const changePage = () => {
-  //   if (success) {
-  //     alert("success")
-  //     navigate("/dash")
-  //   } else {
-  //     alert("Username and passowrd does not match")
-  //   }
-  // }
   const logIn = (e) => {
     e.preventDefault()
     if (userName === null || password === null) {
@@ -53,7 +36,6 @@ const Auth = () => {
           authData[i].userName === userName &&
           authData[i].password === password
         ) {
-          setSuccess(true)
           navigate("/dash")
           break
         } else {
@@ -62,7 +44,6 @@ const Auth = () => {
         }
       }
     }
-    // changePage()
   }
 
   return (
