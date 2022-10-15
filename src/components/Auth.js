@@ -16,10 +16,10 @@ const Auth = () => {
         console.log(error)
       }
       if (data) {
-        data.forEach((d) => {
-          const { userName, password } = d
-          console.log(userName, password)
-        })
+        // data.forEach((d) => {
+        //   const { userName, password } = d
+        //   // console.log(userName, password)
+        // })
 
         setAuthData(data)
       }

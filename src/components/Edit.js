@@ -48,11 +48,21 @@ function History() {
         cNumber: null,
       })
       .eq("cNumber", Number(currentId))
+    const removeResult = removeCustomerBill.data
+    const removeError = removeCustomerBill.error
+    if (removeResult) {
+      // console.log(removeResult)
+    }
+    if (removeError) {
+      console.log(removeError)
+    }
     const { error } = await supabase
       .from("customer")
       .delete()
       .eq("cNumber", currentId)
-    // console.log(error)
+    if (error) {
+      // console.log(error)
+    }
     document.getElementById(currentId).remove()
     alert(`Customer ${currentId} deleted`)
   }

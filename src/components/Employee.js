@@ -87,7 +87,7 @@ export default function App() {
       })
 
     if (data) {
-      console.log(data)
+      // console.log(data)
       setEmployeeDetails({})
       setEnteredEId("")
       setAmount("")

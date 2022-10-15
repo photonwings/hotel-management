@@ -8,7 +8,7 @@ function History() {
     const fetchHistory = async () => {
       const { data, error } = await supabase.from("bill").select()
       if (data) {
-        console.log(data)
+        // console.log(data)
         setBill(data)
       }
       if (error) {
