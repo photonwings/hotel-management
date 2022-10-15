@@ -40,7 +40,7 @@ function History() {
           {bill.map(({ bId, cNumber, dateTime, totalAmount }, index) => (
             <tr key={index}>
               <td>{bId}</td>
-              <td>{cNumber}</td>
+              <td>{cNumber ? cNumber : "Customer Deleted"}</td>
               <td>{dateTime.split("T")[0]}</td>
               <td>{dateTime.split("T")[1].slice(0, 8)}</td>
               <td>{totalAmount}</td>

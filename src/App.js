@@ -12,6 +12,7 @@ import Employee from "./components/Employee"
 import History from "./components/History"
 import WithoutNav from "./components/WithoutNav"
 import WithNav from "./components/WithNav"
+import Edit from "./components/Edit"
 
 function App() {
   const [dishPrice, setDishPrice] = useState([])
@@ -40,6 +41,7 @@ function App() {
           <Route path="/billing" element={<Billing dishPrice={dishPrice} />} />
           <Route path="/employee" element={<Employee />} />
           <Route path="/history" element={<History />} />
+          <Route path="/edit" element={<Edit />} />
         </Route>
         {/* <Route path="/" element={} /> */}
       </Routes>

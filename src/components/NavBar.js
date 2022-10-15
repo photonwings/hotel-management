@@ -11,6 +11,7 @@ const NavBar = () => {
             <Nav.Link href="/billing">Billing</Nav.Link>
             <Nav.Link href="/employee">Payment</Nav.Link>
             <Nav.Link href="/history">History</Nav.Link>
+            <Nav.Link href="/edit">Edit</Nav.Link>
             {/* <Nav.Link className="ms-5" href="/auth">
               Log In
             </Nav.Link> */}
